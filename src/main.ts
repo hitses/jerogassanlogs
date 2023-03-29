@@ -1,12 +1,21 @@
-import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
-
-
 import { importProvidersFrom } from '@angular/core';
-import { AppComponent } from './app/app.component';
-import { BrowserModule, bootstrapApplication } from '@angular/platform-browser';
+import { bootstrapApplication } from '@angular/platform-browser';
+import { provideRouter } from '@angular/router';
+import { HttpClient, provideHttpClient } from '@angular/common/http';
 
+import { MarkdownModule } from 'ngx-markdown';
+import { AppComponent } from './app/app.component';
+
+import { routes } from './app/app.routing';
 
 bootstrapApplication(AppComponent, {
-    providers: [importProvidersFrom(BrowserModule)]
-})
-  .catch(err => console.error(err));
+  providers: [
+    provideRouter(routes),
+    provideHttpClient(),
+    importProvidersFrom([
+      MarkdownModule.forRoot({
+        loader: HttpClient,
+      }),
+    ]),
+  ],
+}).catch((err) => console.error(err));
