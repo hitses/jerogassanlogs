@@ -1,48 +1,11 @@
-@font-face {
-  font-family: "RobotoFlex";
-  src: local("Roboto"), url(assets/fonts/robotoFlex.ttf) format("truetype");
-}
-
-@font-face {
-  font-family: "FiraCode-Bold";
-  src: local("FiraCode-Bold"),
-    url(assets/fonts/firacode/FiraCode-Bold.ttf) format("truetype");
-}
-
-@font-face {
-  font-family: "FiraCode-Light";
-  src: local("FiraCode-Light"),
-    url(assets/fonts/firacode/FiraCode-Light.ttf) format("truetype");
-}
-
-@font-face {
-  font-family: "FiraCode-Medium";
-  src: local("FiraCode-Medium"),
-    url(assets/fonts/firacode/FiraCode-Medium.ttf) format("truetype");
-}
-
-@font-face {
-  font-family: "FiraCode-Regular";
-  src: local("FiraCode-Regular"),
-    url(assets/fonts/firacode/FiraCode-Regular.ttf) format("truetype");
-}
-
-@font-face {
-  font-family: "FiraCode-Retina";
-  src: local("FiraCode-Retina"),
-    url(assets/fonts/firacode/FiraCode-Retina.ttf) format("truetype");
-}
-
-@font-face {
-  font-family: "FiraCode-SemiBold";
-  src: local("FiraCode-SemiBold"),
-    url(assets/fonts/firacode/FiraCode-SemiBold.ttf) format("truetype");
-}
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex&display=swap");
 
 :root {
   --primary: #e74c3c;
   --base: #eee;
   --back: #333;
+  --font: "Roboto Flex", sans-serif;
+  --mono: monospace;
 }
 
 * {
@@ -55,7 +18,7 @@
 html {
   overflow-y: scroll;
   height: 100%;
-  font: 100%/1.5 "RobotoFlex";
+  font: 100%/1.5 var(--font);
   word-wrap: break-word;
   margin: 0 auto;
   background-color: var(--back);
@@ -104,7 +67,7 @@ pre code {
   color: #333;
   background-color: #eee;
   padding: 0.05em 0.2em;
-  font-family: "FiraCode-Regular";
+  font-family: var(--mono);
   font-size: 0.9rem;
 }
 
@@ -124,7 +87,7 @@ ul li p {
 }
 
 dl {
-  font-family: "FiraCode-Regular";
+  font-family: var(--mono);
 }
 dl dt {
   font-weight: bold;
@@ -209,7 +172,7 @@ figure {
   margin: 1em 0;
 }
 figure figcaption {
-  font-family: "FiraCode-Regular";
+  font-family: var(--mono);
   font-size: 0.75em;
   text-align: center;
   color: grey;
@@ -259,7 +222,7 @@ header a + a {
   background: rgba(220, 220, 220, 0.2);
 }
 .posts .post .date {
-  font-family: "FiraCode-Regular";
+  font-family: var(--mono);
   font-size: 0.8rem;
   vertical-align: middle;
   padding-right: 2rem;
