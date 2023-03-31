@@ -12,8 +12,6 @@ Angular CLI hará dos preguntas. La primera es si se quieren añadir <strong>rut
 
 La segunda pregunta es sobre qué tipo de estilos se van a usar. Elegir el que más convenga.
 
-Añadir al archivo .gitignore el <strong>package-lock.json</strong> para que no se suba al repositorio del proyecto.
-
 ### Convertir la aplicación de Angular convencional a Standalone
 
 Abrir una ventana de comando con la ruta donde se encuentra la aplicación de Angular creada anteriormente y ejecutar el siguiente comando:
