@@ -1,11 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Flex&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code&display=swap");
 
 :root {
   --primary: #e74c3c;
   --base: #eee;
   --back: #333;
   --font: "Roboto Flex", sans-serif;
-  --mono: monospace;
+  --mono: "Fira Code", monospace;
 }
 
 * {
