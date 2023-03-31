@@ -1,5 +1,11 @@
 <ul class="posts">
   <li class="post">
+    <a href="/create-an-angular-application-and-convert-it-to-standalone">
+      <p class="date">30 03 2023</p>
+      Crear una aplicación de Angular y convertirla a Standalone
+    </a>
+  </li>
+  <li class="post">
     <a href="/deploy-an-angular-based-project-in-firebase">
       <p class="date">28 03 2023</p>
       Implementar un proyecto basado en Angular en Firebase

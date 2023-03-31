@@ -2,7 +2,7 @@
 
 Se comprueba que el proyecto no se encuentra en estado de ejecución.
 
-Dentro del proyecto de Angular, se accede al archivo <span class="bold">angular.json</span> en la raíz
+Dentro del proyecto de Angular, se accede al archivo <strong>angular.json</strong> en la raíz
 de directorios.
 
 Se busca con Command + F (MacOs) o Ctrl + F (Windows) el elemento que no
@@ -25,7 +25,7 @@ Dentro del objeto se añade la siguiente línea de código:
 
 Guardar los cambios realizados en los archivos modificados.
 
-Se puede añadir el siguiente extracto de código en <span class="bold">schematics</span>:
+Se puede añadir el siguiente extracto de código en <strong>schematics</strong>:
 
 ```json
 "@schematics/angular:component": {

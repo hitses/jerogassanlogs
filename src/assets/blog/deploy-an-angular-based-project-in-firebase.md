@@ -12,11 +12,11 @@ Decidir si se va a activar <a href="https://analytics.google.com/analytics/web/"
 
 Crear proyecto y esperar a que finalice la operación.
 
-Para preparar el entorno de producción, acceder desde el menú de la izquierda a <span class="bold">Compilación/Hosting</span>.
+Para preparar el entorno de producción, acceder desde el menú de la izquierda a <strong>Compilación/Hosting</strong>.
 
-Seleccionar <span class="bold">Comenzar</span>.
+Seleccionar <strong>Comenzar</strong>.
 
-Comprobar si <span class="bold">Firebase CLI</span> está instalado en el sistema. Para ello, se debe ejecutar el siguiente comando:
+Comprobar si <strong>Firebase CLI</strong> está instalado en el sistema. Para ello, se debe ejecutar el siguiente comando:
 
 ```bash
 firebase tools --version
@@ -36,28 +36,28 @@ firebase login
 
 Pide las credenciales a través de una ventana emergente del navegador y se debe seleccionar la cuenta con la que se va a preparar el hosting. También pide recuperar información, por defecto no se activa esta opción.
 
-Una vez se realiza el proceso, se debe acceder a la raíz del proyecto en la consola de comandos para iniciar el proyecto en <span class="bold">Firebase CLI</span> con el siguiente comando:
+Una vez se realiza el proceso, se debe acceder a la raíz del proyecto en la consola de comandos para iniciar el proyecto en <strong>Firebase CLI</strong> con el siguiente comando:
 
 ```bash
 firebase init
 ```
 
-Al ejecutar el comando <span class="bold">Firebase CLI</span> realiza una serie de preguntas de configuración. 
+Al ejecutar el comando <strong>Firebase CLI</strong> realiza una serie de preguntas de configuración. 
 
-- <span class="bold">Which Firebase features do you want to set up for this directory?</span>
+- <strong>Which Firebase features do you want to set up for this directory?</strong>
   - Hosting: Configure files for Firebase Hosting and (optionally) set up GitHub Action deploys.
-- <span class="bold">Please select an option:</span>
+- <strong>Please select an option:</strong>
   - Use an existing project.
-- <span class="bold">Select a default Firebase project for this directory:</span>
-  - Seleccionar el nombre del proyecto que se ha creado anteriormente en la consola de <span class="bold">Firebase</span>.
-- <span class="bold">What do you want to use as your public directory?</span>
+- <strong>Select a default Firebase project for this directory:</strong>
+  - Seleccionar el nombre del proyecto que se ha creado anteriormente en la consola de <strong>Firebase</strong>.
+- <strong>What do you want to use as your public directory?</strong>
   - Public.
-- <span class="bold">Configure as a single-page app (rewrite all urls to /index.html)?</span>
+- <strong>Configure as a single-page app (rewrite all urls to /index.html)?</strong>
   - Yes.
-- <span class="bold">Set up automatic builds and deploys with GitHub?</span>
+- <strong>Set up automatic builds and deploys with GitHub?</strong>
   - No.
 
-Se generan dos archivos de configuración: <span class="bold">.firebaserc</span> y <span class="bold">firebase.json</span>.
+Se generan dos archivos de configuración: <strong>.firebaserc</strong> y <strong>firebase.json</strong>.
 
 A continuación, se debe realizar la construcción de lo que será la aplicación web con el siguiente comando:
 
@@ -65,7 +65,7 @@ A continuación, se debe realizar la construcción de lo que será la aplicació
 ng build
 ```
 
-En el archivo <span class="bold">firebase.json</span> se debe realizar un cambio. En la propiedad <span class="bold">"public"</span> hay que añadir <span class="bold">"dist/project-name"</span>:
+En el archivo <strong>firebase.json</strong> se debe realizar un cambio. En la propiedad <strong>"public"</strong> hay que añadir <strong>"dist/project-name"</strong>:
 
 ```json
 {

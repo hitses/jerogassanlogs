@@ -24,7 +24,7 @@ En el archivo CSS correspondiente creamos el siguiente código:
 Luego creamos en el archivo HTML un elemento con la clase **blink**:
 
 ```html
-<span class="blink">_</span>
+<strong>_</strong>
 ```
 
 Puedes ver el resultado en el título de esta misma web.
