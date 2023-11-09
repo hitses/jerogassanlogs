@@ -1,5 +1,11 @@
 <ul class="posts">
   <li class="post">
+    <a href="/update-angular-version-in-your-computer">
+      <p class="date">09 11 2023</p>
+      Actualizar la versión de Angular en tu ordenador
+    </a>
+  </li>
+  <li class="post">
     <a href="/create-an-angular-application-and-convert-it-to-standalone">
       <p class="date">30 03 2023</p>
       Crear una aplicación de Angular y convertirla a Standalone
